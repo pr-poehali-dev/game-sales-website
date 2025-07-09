@@ -90,6 +90,8 @@
   }
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap");
+
 @layer base {
   * {
     @apply border-border;
@@ -97,5 +99,19 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .hover-scale {
+    @apply transition-transform duration-200 hover:scale-105;
+  }
+
+  .glow-border {
+    @apply border border-orange-400/50 shadow-lg shadow-orange-400/20;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
   }
 }
